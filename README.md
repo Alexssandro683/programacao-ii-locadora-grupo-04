@@ -30,11 +30,11 @@ O preenchimento desta seção é **obrigatório**. Cada integrante deve aparecer
 
 | Integrante | GitHub | Responsabilidades planejadas | Entregas efetivamente realizadas | Evidências (commits/PRs) |
 |---|---|---|---|---|
-| Alexssandro | [@usuario] | Cadastro, validação e consulta de veículos, incluindo controle de disponibilidade — RF01/RF03. | [Preencher após implementação] | [Links para commits/PRs] |
-| Ana Karla | [@usuario] | Cadastro e identificação de clientes, com validação de identificadores e CPF duplicados — RF02. | [Preencher após implementação] | [Links para commits/PRs] |
-| Andrisson | [@usuario] | Registro de locações, seleção de clientes e veículos, validação dos dias contratados e atualização da disponibilidade — RF04. | [Preencher após implementação] | [Links para commits/PRs] |
-| Jair | [@usuario] | Implementação das regras de cálculo para carros e motocicletas, utilizando interface, sobrescrita e polimorfismo — RF05. | [Preencher após implementação] | [Links para commits/PRs] |
-| Nikolas | [@usuario] | Devolução de veículos, encerramento de locações ativas e consulta dos registros de locação — RF06/RF07. | [Preencher após implementação] | [Links para commits/PRs] |
+| definir | [@usuario] | Cadastro, validação e consulta de veículos, incluindo controle de disponibilidade — RF01/RF03. | [Preencher após implementação] | [Links para commits/PRs] |
+| definir | [@usuario] | Cadastro e identificação de clientes, com validação de identificadores e CPF duplicados — RF02. | [Preencher após implementação] | [Links para commits/PRs] |
+| definir | [@usuario] | Registro de locações, seleção de clientes e veículos, validação dos dias contratados e atualização da disponibilidade — RF04. | [Preencher após implementação] | [Links para commits/PRs] |
+| definir | [@usuario] | Implementação das regras de cálculo para carros e motocicletas, utilizando interface, sobrescrita e polimorfismo — RF05. | [Preencher após implementação] | [Links para commits/PRs] |
+| definir | [@usuario] | Devolução de veículos, encerramento de locações ativas e consulta dos registros de locação — RF06/RF07. | [Preencher após implementação] | [Links para commits/PRs] |
 
 > Ajuste a quantidade de linhas ao número real de integrantes. **Planejamento não equivale a comprovação de autoria.** A avaliação individual considerará as alterações efetivas e a capacidade de explicá-las. A distribuição acima é apenas ilustrativa; não há obrigação de manter essas atribuições.
 

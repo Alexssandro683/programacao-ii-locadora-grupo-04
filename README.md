@@ -77,8 +77,8 @@ Atualizar o status somente após implementar e verificar cada requisito.
 
 | Item | Escolha do grupo |
 |---|---|
-| Versão do JDK | [informar] |
-| IDE | [informar] |
+| Versão do JDK | [Azul Zulu JDK 25 LTS] |
+| IDE | [Intellij] |
 | Organização de pacotes | [informar] |
 | Biblioteca ou gerenciador de dependências (se houver) | [informar] |
 | Banco de dados (se houver) | [informar] |

@@ -36,7 +36,7 @@ O preenchimento desta seção é **obrigatório**. Cada integrante deve aparecer
 | definir | [@usuario] | Implementação das regras de cálculo para carros e motocicletas, utilizando interface, sobrescrita e polimorfismo — RF05. | [Preencher após implementação] | [Links para commits/PRs] |
 | definir | [@usuario] | Devolução de veículos, encerramento de locações ativas e consulta dos registros de locação — RF06/RF07. | [Preencher após implementação] | [Links para commits/PRs] |
 
-> Ajuste a quantidade de linhas ao número real de integrantes. **Planejamento não equivale a comprovação de autoria.** A avaliação individual considerará as alterações efetivas e a capacidade de explicá-las. A distribuição acima é apenas ilustrativa; não há obrigação de manter essas atribuições.
+> **Responsabilidades compartilhadas:** todos os integrantes participarão das validações, tratamento de exceções, testes, documentação e integração do sistema. Cada responsável deverá implementar e verificar as regras de negócio relacionadas ao seu módulo.
 
 ### 3.1 Registro de decisões e redistribuição de tarefas
 

@@ -77,10 +77,10 @@ Atualizar o status somente após implementar e verificar cada requisito.
 |---|---|
 | Versão do JDK | Azul Zulu JDK 25 LTS |
 | IDE | IntelliJ |
-| Organização de pacotes | A definir |
-| Biblioteca ou gerenciador de dependências | A definir |
-| Banco de dados | A definir |
-| Interface gráfica (incerteza) | A definir |
+| Organização de pacotes |  `locadora`: entidades, regras de negócio, exceção personalizada e acesso ao banco; `interfaceusuario`: inicialização e interação com o usuário pelo console. |
+| Biblioteca ou gerenciador de dependências | Maven e driver JDBC do PostgreSQL  |
+| Banco de dados | PostgreSQL hospedado no Supabase, acessado por JDBC |
+| Interface gráfica (incerteza) | Não prevista inicialmente. Interação por menu no console. |
 
 Estrutura proposta (pode ser adaptada):
 

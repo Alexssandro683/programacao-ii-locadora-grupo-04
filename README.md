@@ -30,11 +30,11 @@ O preenchimento desta seção é **obrigatório**. Cada integrante deve aparecer
 
 | Integrante | GitHub | Responsabilidades planejadas | Entregas efetivamente realizadas | Evidências (commits/PRs) |
 |---|---|---|---|---|
-| Nicolas Edward | [@nicolasedward-a11y] | Cadastro, validação e consulta de veículos, incluindo controle de disponibilidade — RF01/RF03. | [Preencher após implementação] | [Links para commits/PRs] |
-| Ana Karla | [@karlalemos03] | Cadastro e identificação de clientes, com validação de identificadores e CPF duplicados — RF02. | [Preencher após implementação] | [Links para commits/PRs] |
-| Alexssandro | [@Alexssandro683] | Registro de locações, seleção de clientes e veículos, validação dos dias contratados e atualização da disponibilidade — RF04. | [Preencher após implementação] | [Links para commits/PRs] |
-| Andrisson | [@Andrisson14] | Implementação das regras de cálculo para carros e motocicletas, utilizando interface, sobrescrita e polimorfismo — RF05. | [Preencher após implementação] | [Links para commits/PRs] |
-| Jair | [@jaircalado] | Devolução de veículos, encerramento de locações ativas e consulta dos registros de locação — RF06/RF07. | [Preencher após implementação] | [Links para commits/PRs] |
+| Nicolas Edward | @nicolasedward-a11y | Cadastro, validação e consulta de veículos, incluindo controle de disponibilidade — RF01/RF03. | [Preencher após implementação] | [Links para commits/PRs] |
+| Ana Karla | @karlalemos03 | Cadastro e identificação de clientes, com validação de identificadores e CPF duplicados — RF02. | [Preencher após implementação] | [Links para commits/PRs] |
+| Alexssandro | @Alexssandro683 | Registro de locações, seleção de clientes e veículos, validação dos dias contratados e atualização da disponibilidade — RF04. | [Preencher após implementação] | [Links para commits/PRs] |
+| Andrisson | @Andrisson14 | Implementação das regras de cálculo para carros e motocicletas, utilizando interface, sobrescrita e polimorfismo — RF05. | [Preencher após implementação] | [Links para commits/PRs] |
+| Jair Calado | @jaircalado | Devolução de veículos, encerramento de locações ativas e consulta dos registros de locação — RF06/RF07. | [Preencher após implementação] | [Links para commits/PRs] |
 
 > **Responsabilidades compartilhadas:** todos os integrantes participarão das validações, tratamento de exceções, testes, documentação e integração do sistema. Cada responsável deverá implementar e verificar as regras de negócio relacionadas ao seu módulo.
 

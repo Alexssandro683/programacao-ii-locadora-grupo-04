@@ -12,18 +12,19 @@ public class Locacao {
     public Locacao (Cliente cliente, Veiculo veiculo, int diasContratados) {
 
         if (cliente == null) {
-            throw new IllegalArgumentException("Ter cliente é obrigatório");
+            throw new  RegraNegocioException("Ter cliente é obrigatório");
         }
         if (veiculo == null) {
-            throw new IllegalArgumentException("Ter veículo é obrigatório");
+            throw new  RegraNegocioException("Ter veículo é obrigatório");
         }
 
         if (diasContratados <= 0) {
-            throw new IllegalArgumentException("Quantidade de dias deve ser maior que zero.");
+            throw new RegraNegocioException("Quantidade de dias deve ser maior que zero.");
         }
         this.cliente = cliente;
         this.veiculo = veiculo;
         this.diasContratados = diasContratados;
+        this.valorTotal = veiculo.calcularValorLocacao(diasContratados);
         this.ativa = true;
     }
     public long getId(){
@@ -38,11 +39,26 @@ public class Locacao {
 
     public Veiculo getVeiculo() {
         return veiculo;
-    }
+    }   
     public double getValorTotal(){
         return valorTotal;
     }
     public boolean isAtiva(){
         return ativa;
+    }
+    public void atribuirId(long novoId){
+        if(novoId <=0){
+            throw new RegraNegocioException("O ID da locação deve ser positivo.");
+        }
+        if(this.id !=0){
+            throw new RegraNegocioException("O ID da locação já foi atribuido");
+        }
+        this.id = novoId;
+    }
+    public void encerrar(){
+        if(!ativa){
+            throw new RegraNegocioException("Esta locação já tá encerrada");
+        }
+        this.ativa = false;
     }
 }

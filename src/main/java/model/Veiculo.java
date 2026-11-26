@@ -9,7 +9,7 @@ public abstract class Veiculo implements Locavel {
     private final String modelo;
     private final double valorDiaria;
     private boolean disponivel;
-
+    private long id;
     public Veiculo(String placa, String modelo, double valorDiaria) {
 
         if (placa == null || placa.isBlank()) {
@@ -28,6 +28,13 @@ public abstract class Veiculo implements Locavel {
         this.modelo = modelo.trim();
         this.valorDiaria = valorDiaria;
         this.disponivel = true;
+    }
+
+    public long getId(){
+        return id;
+    }
+    public void definirId(long id) {
+        this.id = id;
     }
 
     public String getPlaca() {

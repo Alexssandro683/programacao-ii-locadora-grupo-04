@@ -7,15 +7,15 @@ public class Cliente {
 
     public Cliente(String nome, String cpf) {
         if (nome == null || nome.isBlank()){
-            throw new IllegalArgumentException("Nome não pode ser vazio.");
+            throw new RegraNegocioException("Nome não pode ser vazio.");
         }
         if (cpf == null){
-            throw new IllegalArgumentException("CPF não pode ser nulo.");
+            throw new RegraNegocioException("CPF não pode ser nulo.");
         }
         String cpfLimpo = cpf.replaceAll("[^0-9]", "");
 
         if (!cpfTemOnzeDigitos(cpfLimpo)){
-            throw new IllegalArgumentException("CPF deve possuir 11 dígitos.");
+            throw new RegraNegocioException("CPF deve possuir 11 dígitos.");
         }
         this.nome = nome;
         this.cpf = cpfLimpo;
@@ -31,29 +31,29 @@ public class Cliente {
     public long getId() {
         return id;
     }
-    void atribuirId(long novoId){
+    public void atribuirId(long novoId){
         if (novoId <= 0){
-            throw new IllegalArgumentException("ID deve ser positivo.");
+            throw new RegraNegocioException("ID deve ser positivo.");
         }
         if (this.id != 0){
-            throw new IllegalArgumentException("ID já foi atribuido.");
+            throw new RegraNegocioException("ID já foi atribuído.");
         }
         this.id = novoId;
     }
     public void setNome(String novoNome){
         if (novoNome == null || novoNome.isBlank()){
-            throw new IllegalArgumentException("Nome não pode ser vazio.");
+            throw new RegraNegocioException("Nome não pode ser vazio.");
         }
         this.nome = novoNome;
     }
     public void setCpf(String novoCpf){
         if (novoCpf == null){
-            throw new IllegalArgumentException("CPF não pode ser nulo.");
+            throw new RegraNegocioException("CPF não pode ser nulo.");
         }
         String cpfLimpo = novoCpf.replaceAll("[^0-9]", "");
 
         if (!cpfTemOnzeDigitos(cpfLimpo)){
-            throw new IllegalArgumentException("CPF deve possuir 11 dígitos.");
+            throw new RegraNegocioException("CPF deve possuir 11 dígitos.");
         }
         this.cpf = cpfLimpo;
     }

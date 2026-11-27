@@ -9,13 +9,13 @@ public class SistemaLocacao {
 
     public void cadastrarCliente(String nome, String cpf){
         if (cpf == null){
-            throw new IllegalArgumentException("CPF não pode ser nulo.");
+            throw new RegraNegocioException("CPF não pode ser nulo.");
         }
         String cpfLimpo = cpf.replaceAll("[^0-9]", "");
 
         for (Cliente cliente : clientes){
             if (cliente.getCpf().equals(cpfLimpo)){
-                throw new IllegalArgumentException("Já existe um cliente cadastrado com esse CPF.");
+                throw new RegraNegocioException("Já existe um cliente cadastrado com esse CPF.");
             }
         }
         Cliente novoCliente = new Cliente(nome, cpf);
@@ -36,7 +36,7 @@ public class SistemaLocacao {
     }
     public Cliente buscarPorCpf(String cpf){
         if (cpf == null){
-            throw new IllegalArgumentException("CPF não pode ser nulo.");
+            throw new RegraNegocioException("CPF não pode ser nulo.");
         }
         String cpfLimpo = cpf.replaceAll("[^0-9]", "");
 
@@ -54,21 +54,21 @@ public class SistemaLocacao {
         Cliente cliente = buscarPorId(id);
 
         if (cliente == null){
-            throw new IllegalArgumentException("Cliente não encontrado.");
+            throw new RegraNegocioException("Cliente não encontrado.");
         }
         if (novoNome == null || novoNome.isBlank()){
-            throw new IllegalArgumentException("Nome não pode ser vazio.");
+            throw new RegraNegocioException("Nome não pode ser vazio.");
         }
         if (novoCpf == null){
-            throw new IllegalArgumentException("CPF não pode ser nulo.");
+            throw new RegraNegocioException("CPF não pode ser nulo.");
         }
         String cpfLimpo = novoCpf.replaceAll("[^0-9]", "");
         if (cpfLimpo.length() != 11){
-            throw new IllegalArgumentException("CPF deve possuir 11 dígitos.");
+            throw new RegraNegocioException("CPF deve possuir 11 dígitos.");
         }
         for (Cliente outroCliente : clientes){
             if (outroCliente.getCpf().equals(cpfLimpo) && outroCliente.getId() != id){
-                throw new IllegalArgumentException("Já existe outro cliente cadastrado com esse CPF.");
+                throw new RegraNegocioException("Já existe outro cliente cadastrado com esse CPF.");
             }
         }
         cliente.setNome(novoNome);
@@ -78,7 +78,7 @@ public class SistemaLocacao {
         Cliente cliente = buscarPorId(id);
 
         if (cliente == null) {
-            throw new IllegalArgumentException("Cliente não encontrado.");
+            throw new RegraNegocioException("Cliente não encontrado.");
         }
         clientes.remove(cliente);
     }

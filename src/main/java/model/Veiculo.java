@@ -53,16 +53,19 @@ public abstract class Veiculo implements Locavel {
         return disponivel;
     }
 
-    public void ocupar(){
-        if (!disponivel){
-            throw new RegraNegocioException("O veículo já está ocupado. ");
+    public void ocupar() {
+        if (!disponivel) {
+            throw new RegraNegocioException("O veículo já está ocupado.");
         }
+
         disponivel = false;
     }
-    public void liberar(){
-        if (disponivel){
-            throw new RegraNegocioException("O veícolo está disponível. ");
+
+    public void liberar() {
+        if (disponivel) {
+            throw new RegraNegocioException("O veículo já está disponível.");
         }
+
         disponivel = true;
     }
 

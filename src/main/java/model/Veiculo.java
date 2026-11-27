@@ -71,4 +71,6 @@ public abstract class Veiculo implements Locavel {
 
     @Override
     public abstract double calcularValorLocacao(int dias);
+
+    public abstract String getTipo();
 }

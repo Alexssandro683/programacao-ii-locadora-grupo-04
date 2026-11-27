@@ -47,6 +47,9 @@ public class SistemaLocacao {
         }
         return null;
     }
+    public List<Cliente> listarClientes(){
+        return new ArrayList<>(clientes);
+    }
     public void atualizarCliente(long id, String novoNome, String novoCpf){
         Cliente cliente = buscarPorId(id);
 

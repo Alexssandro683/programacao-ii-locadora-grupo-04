@@ -34,6 +34,18 @@ public abstract class Veiculo implements Locavel {
         return id;
     }
     public void definirId(long id) {
+        if (id <= 0) {
+            throw new RegraNegocioException(
+                    "O identificador deve ser maior que zero."
+            );
+        }
+
+        if (this.id != 0) {
+            throw new RegraNegocioException(
+                    "O veículo já possui um identificador."
+            );
+        }
+
         this.id = id;
     }
 
